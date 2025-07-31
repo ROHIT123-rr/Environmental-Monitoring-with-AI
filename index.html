@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Environmental Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 Environmental Monitoring with AI</h1>
+
+    <div class="inputs">
+      <label>CO₂ (ppm): <input type="number" id="co2" /></label>
+      <label>PM2.5 (µg/m³): <input type="number" id="pm25" /></label>
+      <label>Temperature (°C): <input type="number" id="temp" /></label>
+      <label>Humidity (%): <input type="number" id="humidity" /></label>
+    </div>
+
+    <button onclick="predictAirQuality()">Predict Air Quality</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
